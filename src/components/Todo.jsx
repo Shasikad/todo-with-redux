@@ -4,7 +4,10 @@ const Todo = ({ text, complete, onClick }) => {
   return (
     <div>
       <checkbox onClick={onClick} />
-      <li style={{ textDecoration: complete ? "line-through" : "none" }}>
+      <li
+        onClick={onClick}
+        style={{ textDecoration: complete ? "line-through" : "none" }}
+      >
         {text}
       </li>
     </div>
